@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/output.css" />
+    <title>Note App</title>
+    <script  type="text/javascript" src="./js/main.js" type="module"></script>
+</head>
+<body class="p-1">
+    <div class="note flex justify-between items-center w-screen h-screen gap-2" id="app">
+
+
+
+        <div class="notes__sidebar w-1/6 bg-blue-900 h-full flex flex-col justify-between">
+            <div class="notes-logo">notes app</div>
+
+            <div class="notes__list flex flex-col justify-start items-start gap-2 flex-1">
+                <div class="notes__list-item text-xs border-2 border-white flex flex-col gap-1 overflow-clip text-white flex-1">
+                    <div class="notes__small-title">note 1</div>
+                    <div class="notes__small-body">nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</div>
+                    <div class="notes__small-updated">19:20</div>
+                </div>
+            </div>
+
+            <button class="notes__add bg-green-500">Add notes</button>
+        </div>
+
+
+        <div class="notes__preview w-5/6 flex flex-col gap-2 h-full">
+            <input type="text" name="inputt" class="notes__titile border border-black rounded-sm h-10" />
+            <textarea class="notes__body border border-black rounded-sm "></textarea>
+
+        </div>
+    </div>
+   
+</body>
+</html>
